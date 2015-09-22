@@ -7,6 +7,7 @@
 029-1,93,100,21,18|monster|TameScorpion|1046,8,100000ms,30000ms,Mob029-1::On1046
 029-1,43,43,31,23|monster|Scorpion|1003,2,100000ms,30000ms,Mob029-1::On1003
 029-1,76,42,52,25|monster|ManaBug|1131,3,30ms,0ms,Mob029-1::On1131
+029-1,73,93,14,13|monster|Mymobe|1133,8,100000ms,30000ms,Mob029-1::On1133
 
 
 029-1,0,0,0|script|Mob029-1|-1
@@ -35,6 +36,11 @@ On1046:
 
 On1131:
     set @mobID, 1131;
+    callfunc "MobPoints";
+    end;
+
+On1133:
+    set @mobID, 1133;
     callfunc "MobPoints";
     end;
 }
