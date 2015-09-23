@@ -1,0 +1,37 @@
+// Athena Login Server local configuration file.
+
+// Port to bind Login Server to (always binds to all IPv4 addresses)
+login_port: 6901
+
+// Whether remote administration is enabled or disabled
+admin_state: yes
+
+// Administrative password, used by ladmin to connect remotely to server.
+// NOTICE: You should change its value for security.
+// This is also in ladmin_local.conf
+admin_pass: admin
+
+// List of IPs that the server accepts for remote administration.
+// This can be repeated, with one entry per line.
+// Each line can be an IP prefix (xxx.xxx.), a full IP, or a network/mask.
+// Particularly, it *cannot* be a hostname.
+// The special value 'all' allows all IPs.
+// The special value 'clear' empties the list (useful for includes).
+// Note: internally this is called 'access_ladmin'.
+//ladminallowip: all
+//ladminallowip: clear
+ladminallowip: 127.0.0.1
+
+// Update host
+// If not empty, send address for client to download data.
+// This must contain news.txt and resources.xml
+update_host: http://tmwdata.org/updates/
+
+// Which world should appear first to the players.
+// see server_name in world/conf/char_local.conf
+main_server: The Mana World
+
+// Server Communication username and password.
+// This used to be in save/account.txt, but this is better.
+userid: s1
+passwd: p1
