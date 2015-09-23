@@ -1,0 +1,6 @@
+// Map mi mapa: Crypt Sub-Basement Two
+// This file is generated automatically. All manually added changes will be removed when running the Converter.
+map: mi mapa
+npc: npc/mi mapa/_mobs.txt
+npc: npc/mi mapa/_warps.txt
+npc: npc/mi mapa/vincent.txt

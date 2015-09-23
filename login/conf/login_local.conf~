@@ -10,6 +10,10 @@ admin_state: yes
 // NOTICE: You should change its value for security.
 // This is also in ladmin_local.conf
 admin_pass: admin
+<<<<<<< HEAD
+=======
+gm_pass: admin
+>>>>>>> 4090430dbb46a781dc30369fb4324515296407ba
 
 // List of IPs that the server accepts for remote administration.
 // This can be repeated, with one entry per line.
