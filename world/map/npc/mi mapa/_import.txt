@@ -3,3 +3,4 @@
 map: mi mapa
 npc: npc/mi mapa/_mobs.txt
 npc: npc/mi mapa/_warps.txt
+npc: npc/mi mapa/vincent.txt
