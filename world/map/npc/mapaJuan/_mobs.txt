@@ -1,0 +1,47 @@
+// This file is generated automatically. All manually added changes will be removed when running the Converter.
+// Candor Island mobs
+
+mapaJuan,46,48,4,1|monster|CloverPatch|1037,1,10000ms,120000ms,MobmapaJuan::On1037
+mapaJuan,73,93,14,13|monster|Maggot|1002,8,100000ms,30000ms,MobmapaJuan::On1002
+mapaJuan,90,35,15,11|monster|mobJuan|1133,16,100000ms,30000ms,MobmapaJuan::On1133
+mapaJuan,93,100,21,18|monster|TameScorpion|1135,8,100000ms,30000ms,MobmapaJuan::On1135
+mapaJuan,43,43,31,23|monster|Scorpion|1003,2,100000ms,30000ms,MobmapaJuan::On1003
+mapaJuan,76,42,52,25|monster|ManaBug|1131,3,30ms,0ms,MobmapaJuan::On1131
+
+
+mapaJuan,0,0,0|script|MobmapaJuan|-1
+{
+    end;
+
+On1002:
+    set @mobID, 1002;
+    callfunc "MobPoints";
+    end;
+
+On1003:
+    set @mobID, 1003;
+    callfunc "MobPoints";
+    end;
+
+On1037:
+    set @mobID, 1037;
+    callfunc "MobPoints";
+    end;
+
+On1133:
+    set @mobID, 1133;
+    callfunc "MobPoints";
+    end;
+
+On1131:
+    set @mobID, 1131;
+    callfunc "MobPoints";
+    end;
+
+On1135:
+    set @mobID, 1135;
+    callfunc "MobPoints";
+    end;
+
+
+}
