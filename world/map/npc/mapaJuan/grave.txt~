@@ -1,0 +1,98 @@
+// Barrels
+// Author: Juan Segebre
+// Npc
+mapaJuan,50,88,0|script|Tumba|200
+{
+    set @npc_distance, 2;
+    callfunc "PCtoNPCRange";
+
+    if (QL_ZEGAS == 1)
+        goto L_Find;
+    if (QL_ZEGAS == 2)
+        goto L_Looking;
+    if (QL_ZEGAS == 3)
+        goto L_QuestEnd;
+    if (QL_ZEGAS == 4)
+        goto L_Thanks;
+    goto L_Meet;
+
+L_Meet:
+    mes "[Zombz]";
+    mes "\"Man necesito que me hagas un favor\"";
+    next;
+    mes "\"Me enteraron sin mi talizman de oro.\"";
+    next;
+    mes "\"Esta adentro en uno de los jarrones.\"";
+    next;
+    mes "\"Me lo podrias traer?\"";
+    set QL_ZEGAS, 1;
+    menu
+        "ok.",L_Start,
+        "No fregues!.",L_Close;
+
+L_Find:
+    mes "[Zombz]";
+    mes "\"tenele cuidado a los bichos ahi.\"";
+    next;
+    mes "\"Alfin podre descansar en paz!\"";
+    menu
+        "ok.",L_Start,
+        "Olvidalo maje.",L_Close;
+
+L_Start:
+    mes "[Zombz]";
+    set QL_ZEGAS, 2;
+    mes "\"Gracias loco!.\"";
+    goto L_Close;
+
+L_Looking:
+    mes "[Zombz]";
+    mes "\"No te des por vencido, es oro!.\"";
+    goto L_Close;
+
+L_QuestEnd:
+    mes "[Zombz]";
+    mes "\"jajajaja que iedes!\"";
+    mes "\"Muerto y aun asi caen en mis trampas XD\"";
+    getexp 50, 0;
+    set Zeny, (Zeny + 50);
+    set QL_ZEGAS, 4;
+    goto L_Close;
+
+L_Thanks:
+    mes "[Zomz]";
+    mes "\"Pongase a estudiar Calculo mejor!\"";
+    goto L_Close;
+
+L_Close:
+    close;
+}
+029-1,47,86,0|script|TumbaDebug|200
+{
+    mes "[Tumba Debug]";
+    mes "Reset ?";
+    menu
+        "Yes.", L_Reset,
+        "No.", L_Close;
+
+L_Reset:
+    set QL_ZEGAS, 0;
+    set STARTAREA, STARTAREA &~ (1 << 20);
+    set STARTAREA, STARTAREA &~ (1 << 21);
+    set STARTAREA, STARTAREA &~ (1 << 22);
+    set STARTAREA, STARTAREA &~ (1 << 23);
+    set STARTAREA, STARTAREA &~ (1 << 24);
+    set STARTAREA, STARTAREA &~ (1 << 25);
+    set STARTAREA, STARTAREA &~ (1 << 26);
+    set STARTAREA, STARTAREA &~ (1 << 27);
+    mes "Reset!";
+    goto L_Close;
+
+L_Close:
+    close;
+
+OnInit:
+    if (!debug)
+        disablenpc "TumbaDebug";
+    end;
+}

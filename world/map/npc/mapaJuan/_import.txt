@@ -1,0 +1,6 @@
+// Map mapaJuan: Candor Island
+// This file is generated automatically. All manually added changes will be removed when running the Converter.
+map: mapaJuan
+npc: npc/mapaJuan/_mobs.txt
+npc: npc/mapaJuan/_warps.txt
+npc: npc/mapaJuan/grave.txt

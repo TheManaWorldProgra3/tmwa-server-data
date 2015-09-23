@@ -103,7 +103,9 @@ import: npc/055-3/_import.txt
 import: npc/056-2/_import.txt
 import: npc/057-1/_import.txt
 import: npc/botcheck/_import.txt
-import: npc/mapaCarlos/_import.txt
+<<<<<<< HEAD
 import: npc/mapaJuan/_import.txt
-import: npc/mi mapa/_import.txt
+=======
 import: npc/mimapa/_import.txt
+import: npc/mi mapa/_import.txt
+>>>>>>> c22f93f701a2f01ac01d5b3300fcb0ecce138524
