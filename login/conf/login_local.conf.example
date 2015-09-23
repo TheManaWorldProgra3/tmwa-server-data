@@ -9,7 +9,8 @@ admin_state: yes
 // Administrative password, used by ladmin to connect remotely to server.
 // NOTICE: You should change its value for security.
 // This is also in ladmin_local.conf
-admin_pass: admin
+admin_pass: pass1
+gm_pass: ejemplo2
 
 // List of IPs that the server accepts for remote administration.
 // This can be repeated, with one entry per line.

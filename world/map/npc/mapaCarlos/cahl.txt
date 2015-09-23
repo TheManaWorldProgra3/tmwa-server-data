@@ -1,0 +1,19 @@
+// Talk NPCs to help make trek interesting between Tutorial and Bazaar.
+
+mapaCarlos,50,96,0|script|Guerrero|430
+{
+	mes "Fiel Guerrero, que deseas?";
+	menu
+	"¿Deseas regresar a tu pueblo?",C_npc,
+	"No deseo nada. ¡Gracias!",C_nada;
+
+	C_npc:
+	mes "¡Nos vemos compañero!";
+	warp "029-1", 53,93;
+	goto C_nada;
+
+	C_nada:
+	next;
+	mes "¡Estoy a tu servicio joven!";
+	close; 
+}
