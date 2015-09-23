@@ -104,5 +104,5 @@ import: npc/056-2/_import.txt
 import: npc/057-1/_import.txt
 import: npc/botcheck/_import.txt
 import: npc/mapaJuan/_import.txt
-import: npc/mimapa/_import.txt
 import: npc/mi mapa/_import.txt
+import: npc/mimapa/_import.txt
