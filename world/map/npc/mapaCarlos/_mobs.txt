@@ -1,6 +1,12 @@
 // This file is generated automatically. All manually added changes will be removed when running the Converter.
 // Candor Island mobs
 
+mapaCarlos,46,48,4,1|monster|CloverPatch|1037,1,10000ms,120000ms,MobmapaCarlos::On1037
+mapaCarlos,73,93,14,13|monster|Maggot|1002,8,100000ms,30000ms,MobmapaCarlos::On1002
+mapaCarlos,90,35,15,11|monster|TameScorpion|1046,16,100000ms,30000ms,MobmapaCarlos::On1046
+mapaCarlos,93,100,21,18|monster|TameScorpion|1046,8,100000ms,30000ms,MobmapaCarlos::On1046
+mapaCarlos,43,43,31,23|monster|Scorpion|1003,2,100000ms,30000ms,MobmapaCarlos::On1003
+mapaCarlos,76,42,52,25|monster|ManaBug|1131,3,30ms,0ms,MobmapaCarlos::On1131
 mapaCarlos,72,91,12,8|monster|Serpiente|1150,8,10000ms,30000ms,MobmapaCarlos::On1150
 
 
@@ -8,6 +14,30 @@ mapaCarlos,0,0,0|script|MobmapaCarlos|-1
 {
     end;
 
+On1002:
+    set @mobID, 1002;
+    callfunc "MobPoints";
+    end;
+
+On1003:
+    set @mobID, 1003;
+    callfunc "MobPoints";
+    end;
+
+On1037:
+    set @mobID, 1037;
+    callfunc "MobPoints";
+    end;
+
+On1046:
+    set @mobID, 1046;
+    callfunc "MobPoints";
+    end;
+
+On1131:
+    set @mobID, 1131;
+    callfunc "MobPoints";
+    end;
 
 On1150:
     set @mobID, 1150;
