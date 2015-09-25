@@ -1,0 +1,9 @@
+// This file is generated automatically. All manually added changes will be removed when running the Converter.
+// Alejo Map warps
+
+alejomap1,29,62|warp|To Outside#alejomap10|-1,-1,029-1,40,89
+alejomap1,22,93|warp|To Outside#alejomap11|-1,-1,029-1,44,84
+alejomap1,112,84|warp|To Bedroom#alejomap12|-1,-1,029-2,44,30
+alejomap1,103,62|warp|To Outside#alejomap13|-1,-1,029-1,52,85
+alejomap1,98,42|warp|To Outside#alejomap14|-1,-1,029-1,58,80
+alejomap1,24,124|warp|To Outside#alejomap15|-1,-1,029-1,49,78

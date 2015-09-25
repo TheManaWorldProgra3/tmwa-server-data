@@ -100,4 +100,6 @@
 055-3#055-3.wlk#
 056-2#056-2.wlk#
 057-1#057-1.wlk#
+alejomap#alejomap.wlk#
+alejomap1#alejomap1.wlk#
 botcheck#botcheck.wlk#
