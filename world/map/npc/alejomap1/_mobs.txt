@@ -1,0 +1,15 @@
+// This file is generated automatically. All manually added changes will be removed when running the Converter.
+// Alejo Map mobs
+
+alejomap1,33,57,24,7|monster|HouseMaggot|1050,7,100000ms,30000ms,Mobalejomap1::On1050
+
+
+alejomap1,0,0,0|script|Mobalejomap1|-1
+{
+    end;
+
+On1050:
+    set @mobID, 1050;
+    callfunc "MobPoints";
+    end;
+}

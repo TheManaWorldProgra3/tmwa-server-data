@@ -1,0 +1,5 @@
+// Map alejomap1: Alejo Map
+// This file is generated automatically. All manually added changes will be removed when running the Converter.
+map: alejomap1
+npc: npc/alejomap1/_mobs.txt
+npc: npc/alejomap1/_warps.txt

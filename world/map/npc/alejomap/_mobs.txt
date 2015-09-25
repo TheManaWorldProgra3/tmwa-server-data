@@ -1,0 +1,15 @@
+// This file is generated automatically. All manually added changes will be removed when running the Converter.
+// Candor Island Indoor mobs
+
+alejomap,103,26,24,7|monster|Butterfly|1055,10,100000ms,30000ms,Mobalejomap::On1055
+
+
+alejomap,0,0,0|script|Mobalejomap|-1
+{
+    end;
+
+On1055:
+    set @mobID, 1055;
+    callfunc "MobPoints";
+    end;
+}

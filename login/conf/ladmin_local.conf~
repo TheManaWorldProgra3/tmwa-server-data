@@ -9,6 +9,15 @@ login_port: 6901
 // NOTICE: You should change its value for security.
 // This is also in login_local.conf
 <<<<<<< HEAD
+<<<<<<< HEAD
+admin_pass: pene
+gm_pass: pene
+=======
+admin_pass: prueba
+gm_pass: prueba
+>>>>>>> 91569db824f99c61333659aec434fa378ab24db6
+=======
+<<<<<<< HEAD
 admin_pass: qwerty
 gm_pass: qwerty
 =======
@@ -20,3 +29,8 @@ admin_pass: admin
 gm_pass: admin
 >>>>>>> 4090430dbb46a781dc30369fb4324515296407ba
 >>>>>>> c22f93f701a2f01ac01d5b3300fcb0ecce138524
+<<<<<<< HEAD
+>>>>>>> 2790084a4ce77a81d8e12da912c944d32dc19915
+=======
+>>>>>>> 99051ef0692af973775fdb082b0e180ba4ff7d04
+>>>>>>> 91569db824f99c61333659aec434fa378ab24db6
