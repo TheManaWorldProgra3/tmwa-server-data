@@ -1,0 +1,6 @@
+// Map mapaCarlos: Candor Island
+// This file is generated automatically. All manually added changes will be removed when running the Converter.
+map: mapaCarlos
+npc: npc/mapaCarlos/_mobs.txt
+npc: npc/mapaCarlos/_warps.txt
+npc: npc/mapaCarlos/cahl.txt

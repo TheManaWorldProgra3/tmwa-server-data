@@ -1,0 +1,4 @@
+// This file is generated automatically. All manually added changes will be removed when running the Converter.
+// Candor Island warps
+
+mapaCarlos,52,84|warp|casa 10#mapaCarlos0|-1,-1,029-1,50,92

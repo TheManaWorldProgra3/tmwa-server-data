@@ -1,0 +1,16 @@
+// This file is generated automatically. All manually added changes will be removed when running the Converter.
+// Candor Island mobs
+
+mapaCarlos,72,91,12,8|monster|Serpiente|1150,8,10000ms,30000ms,MobmapaCarlos::On1150
+
+
+mapaCarlos,0,0,0|script|MobmapaCarlos|-1
+{
+    end;
+
+
+On1150:
+    set @mobID, 1150;
+    callfunc "MobPoints";
+    end;
+}
