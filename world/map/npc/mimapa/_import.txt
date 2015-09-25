@@ -1,0 +1,6 @@
+// Map mimapa: Candor Island
+// This file is generated automatically. All manually added changes will be removed when running the Converter.
+map: mimapa
+npc: npc/mimapa/Kamil.txt
+npc: npc/mimapa/_mobs.txt
+npc: npc/mimapa/_warps.txt
