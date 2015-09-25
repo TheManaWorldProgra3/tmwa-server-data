@@ -1,0 +1,51 @@
+// Barrels
+// Author: Wushin
+// Npc
+mimapa,45,85,0|script|God Kamil|130
+{
+    set @npc_distance, 3;
+    callfunc "PCtoNPCRange";
+	
+    if (QL_ZEGAS == 0)
+	goto L_Meet;
+    if (QL_ZEGAS == 2)
+        goto L_QuestEnd;
+    if (QL_ZEGAS == 1)
+        goto L_Thanks;
+    goto L_Meet;
+
+L_Meet:
+    mes "[God Kamil]";
+    mes "\"Hey do you have a second?\"";
+    next;
+    mes "\"Can you answer a question for me?\"";
+    set QL_ZEGAS, 1;
+    menu
+        "Sure.",L_Start,
+        "Maybe some other time.",L_Close;
+
+L_Start:
+    mes "[God Kamil]";
+    mes "\"Can you level up by killing monsters?.\"";
+    menu
+        "Sure.",L_QuestEnd,
+        "I don't know.",L_Close;
+
+L_QuestEnd:
+    mes "[God Kamil]";
+    mes "\"Thanks you so much! I know it's not much but here is 50 GP for your troubles.\"";
+    getexp 50, 0;
+    set Zeny, (Zeny + 50);
+    set QL_ZEGAS, 1;
+    goto L_Close;
+
+L_Thanks:
+    mes "[God Kamil]";
+    mes "\"Thanks for helping me out!\"";
+    set QL_ZEGAS, 0;
+    goto L_Close;
+
+L_Close:
+    close;
+}
+
